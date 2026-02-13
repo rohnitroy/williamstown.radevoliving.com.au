@@ -11,6 +11,8 @@ const Hero: React.FC = () => {
           src="/Client File/Images/Copy of Image9.png" 
           alt="Luxury Architecture Render" 
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
       </div>

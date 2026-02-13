@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
@@ -10,8 +10,23 @@ const RegisterCTA: React.FC = () => {
     'Arrange a private consultation'
   ];
 
+  useEffect(() => {
+    // Load Paperform script
+    const script = document.createElement('script');
+    script.src = 'https://paperform.co/__embed.min.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section id="register" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -27,7 +42,7 @@ const RegisterCTA: React.FC = () => {
               With only two residences available, early registration is essential.
             </p>
 
-            <div className="bg-primary p-8 md:p-12 rounded-[20px]">
+            <div className="bg-primary p-8 md:p-12 rounded-[20px] mb-10">
               <p className="text-dark font-medium text-lg mb-8">Register your interest to:</p>
               <ul className="space-y-4 text-left max-w-md mx-auto">
                 {benefits.map((benefit, index) => (
@@ -46,6 +61,11 @@ const RegisterCTA: React.FC = () => {
                   </motion.li>
                 ))}
               </ul>
+            </div>
+
+            {/* Paperform Embed */}
+            <div className="w-full paperform-wrapper">
+              <div data-paperform-id="redevoliving-williamstown"></div>
             </div>
           </motion.div>
         </div>

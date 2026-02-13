@@ -83,6 +83,7 @@ const Residences: React.FC = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.7 }}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </AnimatePresence>
             
@@ -155,6 +156,7 @@ const Residences: React.FC = () => {
                 transition={{ duration: 0.3 }}
                 className="max-w-[90vw] max-h-[90vh] object-contain"
                 onClick={(e) => e.stopPropagation()}
+                loading="lazy"
               />
 
               <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-sm">
