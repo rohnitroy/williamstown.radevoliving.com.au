@@ -10,9 +10,8 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex space-x-8 mb-4 md:mb-0">
-          <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-gold transition-colors">Disclaimer</a>
-          <a href="#" className="hover:text-gold transition-colors">Contact</a>
+          <a href="https://radevoliving.com.au/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Privacy Policy</a>
+          <a href="https://radevoliving.com.au/contact-us/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Contact</a>
         </div>
 
         <div className="text-center md:text-right">
