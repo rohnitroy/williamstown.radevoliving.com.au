@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-12 flex flex-col sm:flex-row gap-4 justify-center"
+          className="mt-12"
         >
           <a 
             href="#register"
@@ -63,11 +63,6 @@ const Hero: React.FC = () => {
           >
             Register Your Interest
           </a>
-          <button 
-            className="bg-transparent border border-white text-white px-8 py-4 rounded-[200px] uppercase tracking-widest text-sm hover:bg-white hover:text-dark transition-colors duration-300 min-w-[200px]"
-          >
-            Download Brochure
-          </button>
         </motion.div>
       </div>
 

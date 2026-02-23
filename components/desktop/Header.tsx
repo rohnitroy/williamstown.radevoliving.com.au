@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0d1c2a] py-4"
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="flex items-center">
+        <a href="https://radevoliving.com.au/" target="_blank" rel="noopener noreferrer" className="flex items-center">
           <img 
             src="/Radevoliving-Logo.webp" 
             alt="Radevo Living" 
