@@ -49,17 +49,34 @@ const Architecture: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="aspect-[4/3] bg-white/5 border border-gold/30 flex flex-col items-center justify-center p-8 text-center group cursor-pointer rounded-[20px] hover:bg-white/10 transition-all duration-300"
+              className="aspect-[4/3] bg-white/5 border border-gold/30 flex flex-col items-center justify-center p-8 text-center group rounded-[20px] hover:bg-white/10 transition-all duration-300"
             >
               <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mb-4 group-hover:bg-gold group-hover:text-[#0d1c2a] transition-colors duration-300">
                 <span className="font-serif text-xl italic">{num}</span>
               </div>
               <h3 className="font-serif text-2xl text-white mb-2">Residence {num}</h3>
-              <p className="text-white/60 font-light mb-6">4 Bed | 3 Bath | 2 Car</p>
-              <span className="text-sm uppercase tracking-widest border-b border-gold pb-1 text-gold">View Floorplan</span>
+              <p className="text-white/60 font-light">4 Bed | 3 Bath | 2 Car</p>
             </motion.div>
           ))}
         </div>
+
+        {/* View Floorplan Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex justify-center mt-12"
+        >
+          <a
+            href="/Client File/Floor Plan/No.189 Melbourne Rd - Con1s . 01 .pdf_stamped.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-gold text-[#0d1c2a] rounded-[200px] uppercase tracking-widest text-sm hover:bg-gold/90 transition-all duration-300 font-semibold"
+          >
+            View Floorplan
+          </a>
+        </motion.div>
       </div>
     </section>
   );
