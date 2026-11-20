@@ -29,7 +29,7 @@ const Intro: React.FC = () => {
               Set within a premium pocket of Williamstown, this boutique development comprises just two architecturally designed luxury townhouses.
             </p>
             <p>
-              With demolition scheduled for February 2026 and construction to follow immediately, these residences have been thoughtfully designed to blend contemporary architectural expression with timeless coastal character.
+              With demolition now complete and construction set to commence in Q2 2026, these residences have been thoughtfully designed to blend contemporary architectural expression with timeless coastal character.
             </p>
           </div>
           <div>

@@ -7,9 +7,9 @@ const Timeline: React.FC = () => {
   const timeline: TimelineItem[] = [
     { id: 1, status: 'completed', title: 'Plans & Permits Approved', date: 'Completed' },
     { id: 2, status: 'completed', title: 'Structural Engineering', date: 'Completed' },
-    { id: 3, status: 'upcoming', title: 'Demolition', date: 'February 2026' },
-    { id: 4, status: 'upcoming', title: 'Construction Commencement', date: 'Q1 2026' },
-    { id: 5, status: 'upcoming', title: 'Estimated Completion', date: 'Q1–Q2 2027' },
+    { id: 3, status: 'completed', title: 'Demolition', date: 'Completed' },
+    { id: 4, status: 'upcoming', title: 'Construction Commencement', date: 'Q2 2026' },
+    { id: 5, status: 'upcoming', title: 'Estimated Completion', date: 'Q2 2027' },
   ];
 
   return (

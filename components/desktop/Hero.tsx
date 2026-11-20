@@ -15,6 +15,7 @@ const Hero: React.FC = () => {
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
+        <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
